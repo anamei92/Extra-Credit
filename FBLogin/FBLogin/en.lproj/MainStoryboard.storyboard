@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="APMViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d3K-Tg-pMf">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="152" id="I32-h6-NRX"/>
+                                    <constraint firstAttribute="width" constant="223" id="cu8-78-4qM"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZ8-8Z-ySb">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="103" id="dgB-15-A6F"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Upload Photo">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="uploadPhoto:" destination="2" eventType="touchUpInside" id="5vQ-te-3iX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bk3-cP-wX6">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="103" id="mfD-Yf-GN4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Random">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="randomPhoto:" destination="2" eventType="touchUpInside" id="ZMm-f6-0ka"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wsB-VR-DbK">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="216" id="ADn-1R-hG6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Update Status" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gu5-G5-Vm8">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="142" id="gFa-fl-5pY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Random Meme" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="arP-cX-F51">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="142" id="4jn-SO-Tdo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wk4-jD-n1O">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="nSb-r1-WnQ"/>
+                                    <constraint firstAttribute="width" constant="216" id="tRN-Ii-sou"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Update Status">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="updateStatus:" destination="2" eventType="touchUpInside" id="pUJ-yE-joi"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="VUf-wY-HH8"/>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pan-Xr-Fdr">
+                                <items>
+                                    <navigationItem title="Share Info" id="mUw-bC-7AZ">
+                                        <barButtonItem key="rightBarButtonItem" title="Done" id="WQw-je-xv8">
+                                            <connections>
+                                                <action selector="completeEdit:" destination="2" id="gLP-4a-HAm"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1122954988" green="0.30797312580000002" blue="0.52116549739999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="d3K-Tg-pMf" firstAttribute="top" secondItem="3" secondAttribute="top" constant="226" id="6u9-Do-yR5"/>
+                            <constraint firstItem="Gu5-G5-Vm8" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="49" id="87a-2N-3QG"/>
+                            <constraint firstItem="wk4-jD-n1O" firstAttribute="centerX" secondItem="Pan-Xr-Fdr" secondAttribute="centerX" type="default" id="8nf-Wu-dC0"/>
+                            <constraint firstItem="wsB-VR-DbK" firstAttribute="centerX" secondItem="VUf-wY-HH8" secondAttribute="centerX" type="default" id="LpJ-dp-mWk"/>
+                            <constraint firstItem="Pan-Xr-Fdr" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="NY2-zl-kWG"/>
+                            <constraint firstItem="Bk3-cP-wX6" firstAttribute="baseline" secondItem="BZ8-8Z-ySb" secondAttribute="baseline" type="default" id="S1O-AW-0xl"/>
+                            <constraint firstItem="VUf-wY-HH8" firstAttribute="top" secondItem="3" secondAttribute="top" constant="183" id="YzW-sC-Ck9"/>
+                            <constraint firstItem="wsB-VR-DbK" firstAttribute="top" secondItem="Gu5-G5-Vm8" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="ZIa-Dx-Bl6"/>
+                            <constraint firstItem="Pan-Xr-Fdr" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="a7d-n4-mJ7"/>
+                            <constraint firstItem="Bk3-cP-wX6" firstAttribute="leading" secondItem="d3K-Tg-pMf" secondAttribute="leading" type="default" id="cTE-l7-RRD"/>
+                            <constraint firstItem="arP-cX-F51" firstAttribute="leading" secondItem="wk4-jD-n1O" secondAttribute="leading" type="default" id="eev-Qb-Ztu"/>
+                            <constraint firstItem="d3K-Tg-pMf" firstAttribute="trailing" secondItem="BZ8-8Z-ySb" secondAttribute="trailing" type="default" id="iPh-kr-lRW"/>
+                            <constraint firstItem="arP-cX-F51" firstAttribute="leading" secondItem="d3K-Tg-pMf" secondAttribute="leading" type="default" id="jYS-tO-jh0"/>
+                            <constraint firstItem="Bk3-cP-wX6" firstAttribute="top" secondItem="d3K-Tg-pMf" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="oO2-eM-FX2"/>
+                            <constraint firstItem="Pan-Xr-Fdr" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="r9z-hc-MuT"/>
+                            <constraint firstItem="arP-cX-F51" firstAttribute="top" secondItem="3" secondAttribute="top" constant="199" id="rmY-Sv-ERA"/>
+                            <constraint firstItem="wk4-jD-n1O" firstAttribute="top" secondItem="wsB-VR-DbK" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="tbj-ix-PSh"/>
+                            <constraint firstItem="Gu5-G5-Vm8" firstAttribute="leading" secondItem="wsB-VR-DbK" secondAttribute="leading" type="default" id="vMN-U1-td5"/>
+                            <constraint firstItem="Gu5-G5-Vm8" firstAttribute="top" secondItem="3" secondAttribute="top" constant="63" id="wNk-U8-egF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="DoneEdit" destination="WQw-je-xv8" id="Gtg-pD-k5J"/>
+                        <outlet property="RandomButton" destination="Bk3-cP-wX6" id="85r-LV-1IY"/>
+                        <outlet property="UpdateStatus" destination="wk4-jD-n1O" id="xr6-g5-zkP"/>
+                        <outlet property="UploadPhoto" destination="BZ8-8Z-ySb" id="kvJ-Oy-CRu"/>
+                        <outlet property="activity" destination="VUf-wY-HH8" id="DN5-xr-eTJ"/>
+                        <outlet property="myImg" destination="d3K-Tg-pMf" id="b6h-OZ-3O5"/>
+                        <outlet property="myStatus" destination="wsB-VR-DbK" id="pmd-Fv-P9T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="APMViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/APMViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="completeEdit:"/>
+                <relationship kind="action" name="randomPhoto:"/>
+                <relationship kind="action" name="updateStatus:"/>
+                <relationship kind="action" name="uploadPhoto:"/>
+                <relationship kind="outlet" name="DoneEdit" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="RandomButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="UpdateStatus" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="UploadPhoto" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="activity" candidateClass="UIActivityIndicatorView"/>
+                <relationship kind="outlet" name="myImg" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="myStatus" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
