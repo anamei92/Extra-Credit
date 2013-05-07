@@ -7,7 +7,6 @@
 //
 
 #import "APMEditNoteViewController.h"
-#import "APMNote.h"
 #import "APMAppDelegate.h"
 
 @interface APMEditNoteViewController ()

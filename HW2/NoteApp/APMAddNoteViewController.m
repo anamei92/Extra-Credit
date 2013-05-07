@@ -62,13 +62,13 @@ APMAppDelegate *appDelegate;
         NSLog(@"Not Added");
     }
     else{
-        SaveNote *newSaveNote = [NSEntityDescription insertNewObjectForEntityForName:@"SaveNote" inManagedObjectContext: context];
+        self.note = [NSEntityDescription insertNewObjectForEntityForName:@"SaveNote" inManagedObjectContext: context];
     
     
-        newSaveNote.title = self.nameField.text;
-        newSaveNote.text = self.descriptionView.text;
-        newSaveNote.latitude = [NSNumber numberWithDouble: self.locationManager.location.coordinate.latitude];
-        newSaveNote.longitude = [NSNumber numberWithDouble: self.locationManager.location.coordinate.longitude];
+        self.note.title = self.nameField.text;
+        self.note.text = self.descriptionView.text;
+        self.note.latitude = [NSNumber numberWithDouble: self.locationManager.location.coordinate.latitude];
+        self.note.longitude = [NSNumber numberWithDouble: self.locationManager.location.coordinate.longitude];
     
         NSError *error;
     
@@ -87,6 +87,7 @@ APMAppDelegate *appDelegate;
         NSLog(@"Name : %@", [current valueForKey:@"title"]);
         NSLog(@"Description: %@", [ current valueForKey:@"text"]);
     }*/
+    [self.mainNotesController.noteArray addObject: self.note];
     [self dismissViewControllerAnimated:YES completion:nil];
     
 }

@@ -17,7 +17,7 @@
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *cancelButton;
 @property (weak, nonatomic) IBOutlet UITextField *nameField;
 @property (weak, nonatomic) IBOutlet UITextView *descriptionView;
-
+@property (weak, nonatomic) SaveNote *note;
 
 @property (strong, nonatomic) APMTableMainController *mainNotesController;
 - (IBAction)pressedDone:(id)sender;
